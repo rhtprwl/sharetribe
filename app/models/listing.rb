@@ -7,7 +7,7 @@
 #  community_id                    :integer          not null
 #  author_id                       :string(255)
 #  category_old                    :string(255)
-#  title                           :string(255)
+#  title                           :text
 #  times_viewed                    :integer          default(0)
 #  language                        :string(255)
 #  created_at                      :datetime
@@ -21,7 +21,7 @@
 #  destination                     :string(255)
 #  valid_until                     :datetime
 #  delta                           :boolean          default(TRUE), not null
-#  open                            :boolean          default(TRUE)
+#  open                            :boolean          default(TRUE), not null
 #  share_type_old                  :string(255)
 #  privacy                         :string(255)      default("private")
 #  comments_count                  :integer          default(0)

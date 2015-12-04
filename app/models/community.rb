@@ -5,7 +5,7 @@
 #  id                                         :integer          not null, primary key
 #  ident                                      :string(255)
 #  domain                                     :string(255)
-#  use_domain                                 :boolean          default(FALSE), not null
+#  use_domain                                 :integer          default(0), not null
 #  created_at                                 :datetime
 #  updated_at                                 :datetime
 #  settings                                   :text
@@ -18,7 +18,7 @@
 #  automatic_newsletters                      :boolean          default(TRUE)
 #  join_with_invite_only                      :boolean          default(FALSE)
 #  use_captcha                                :boolean          default(FALSE)
-#  allowed_emails                             :text
+#  allowed_emails                             :text(16777215)
 #  users_can_invite_new_users                 :boolean          default(TRUE)
 #  private                                    :boolean          default(FALSE)
 #  label                                      :string(255)
@@ -27,7 +27,7 @@
 #  custom_frontpage_sidebar                   :boolean          default(FALSE)
 #  event_feed_enabled                         :boolean          default(TRUE)
 #  slogan                                     :string(255)
-#  description                                :text
+#  description                                :text(16777215)
 #  category                                   :string(255)      default("other")
 #  country                                    :string(255)
 #  members_count                              :integer          default(0)
@@ -84,7 +84,7 @@
 #  favicon_updated_at                         :datetime
 #  default_min_days_between_community_updates :integer          default(7)
 #  listing_location_required                  :boolean          default(FALSE)
-#  custom_head_script                         :text
+#  custom_head_script                         :text(16777215)
 #  follow_in_use                              :boolean          default(TRUE), not null
 #  logo_processing                            :boolean
 #  wide_logo_processing                       :boolean
